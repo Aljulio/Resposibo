@@ -1,69 +1,35 @@
-# React + TypeScript + Vite
+# Mi Proyecto de React Responsivo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del Proyecto
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación web creada con **React** y **TypeScript**, utilizando **Vite** para un desarrollo rápido. Para el diseño y la responsividad, se ha implementado el framework **Bootstrap**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación consta de:
+- Un **Encabezado** con logotipo y menú de navegación.
+- Una sección de **Contenido Principal** con un título y una descripción.
+- Una **Sección de Tarjetas** que muestra tres servicios.
+- Un **Pie de Página** con enlaces a redes sociales.
 
-## Expanding the ESLint configuration
+## Enfoque de Diseño Responsivo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+El diseño responsivo se logró utilizando el sistema de cuadrícula y las clases de utilidad de **Bootstrap**. El comportamiento de la interfaz se adapta de la siguiente manera:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Dispositivos móviles (≤600px):** El menú se colapsa en un **menú hamburguesa** (`navbar-toggler`), y las tarjetas se **apilan en una sola columna** (`col-12`).
+- **Tabletas (601px - 1024px):** Las tarjetas se organizan en **dos columnas** por fila (`col-md-6`).
+- **Computadoras de escritorio (>1024px):** Las tarjetas se muestran en **tres columnas** por fila (`col-lg-4`).
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Capturas de Pantalla
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A continuación, se muestran capturas de pantalla de la aplicación en diferentes tamaños de dispositivo:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Vista Móvil
+![Vista móvil del proyecto](https://raw.githubusercontent.com/Aljulio/Resposibo/main/assets/mobile.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Vista de Escritorio
+![Vista de escritorio del proyecto](https://raw.githubusercontent.com/Aljulio/Resposibo/main/assets/desktop.png)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Aplicación Desplegada
+
+Puedes ver la versión en vivo de esta aplicación en el siguiente enlace:
+
+[Enlace a la aplicación desplegada](https://aljulio.github.io/Resposibo/)
