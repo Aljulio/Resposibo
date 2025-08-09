@@ -23,10 +23,13 @@ El diseño responsivo se logró utilizando el sistema de cuadrícula y las clase
 A continuación, se muestran capturas de pantalla de la aplicación en diferentes tamaños de dispositivo:
 
 ### Vista Móvil
-![Vista móvil del proyecto](https://raw.githubusercontent.com/Aljulio/Resposibo/main/assets/mobile.png)
+![Vista móvil del proyecto](https://raw.githubusercontent.com/Aljulio/Resposibo/main/src/assets/mobile.png)
+
+### Vista de Tableta
+![Vista de tableta del proyecto](https://raw.githubusercontent.com/Aljulio/Resposibo/main/src/assets/tablet.png)
 
 ### Vista de Escritorio
-![Vista de escritorio del proyecto](https://raw.githubusercontent.com/Aljulio/Resposibo/main/assets/desktop.png)
+![Vista de escritorio del proyecto](https://raw.githubusercontent.com/Aljulio/Resposibo/main/src/assets/desktop.png)
 
 ## Aplicación Desplegada
 
