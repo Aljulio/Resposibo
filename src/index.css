@@ -1,0 +1,34 @@
+/* Documentación de CSS o comentarios para media queries */
+
+/* Dispositivos móviles (≤600px) */
+@media (max-width: 600px) {
+  /*
+    * Las tarjetas ya se apilan por defecto con col-12.
+    * El menú de navegación se convierte en hamburguesa con las clases de Bootstrap.
+  */
+  body {
+    font-size: 16px; /* Ajuste del tamaño de fuente base */
+  }
+}
+
+/* Tabletas (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /*
+    * Las tarjetas se muestran en dos columnas gracias a 'col-md-6'.
+    * Ajustes de espaciado y texto para tabletas.
+  */
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Computadoras de escritorio (>1024px) */
+@media (min-width: 1025px) {
+  /*
+    * Las tarjetas se organizan en tres columnas gracias a 'col-lg-4'.
+    * Mantenemos el diseño base optimizado.
+  */
+  .card-section .row {
+    padding-top: 2rem;
+  }
+}
